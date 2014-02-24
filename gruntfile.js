@@ -9,6 +9,17 @@ module.exports= function(grunt) {
       hamldist: 'www'
     },
 
+    sass: {
+      dist: {
+        options: {
+          style: 'expanded'
+        },
+        files: {
+          '<%= paths.sassdist %>*.sass': ['<%= paths.sass %>*.css']
+        }
+      }
+    },
+
     cssmin: {
       compress: {
         files: {
