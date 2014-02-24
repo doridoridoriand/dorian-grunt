@@ -45,8 +45,8 @@ module.exports= function(grunt) {
       }
     }
   });
-
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-haml');
-  grunt.registerTask('default', ['cssmin', 'haml']);
+  grunt.registerTask('default', ['sass', 'cssmin', 'haml']);
 };
