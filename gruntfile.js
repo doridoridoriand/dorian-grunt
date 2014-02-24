@@ -2,7 +2,7 @@ module.exports= function(grunt) {
   grunt.initConfig({
     paths: {
       sass: 'sass',
-      sassdist: 'www/css'
+      sassdist: 'www/css',
       css: 'www/css',
       cssdist: 'www/dist/css',
       haml: 'haml',
